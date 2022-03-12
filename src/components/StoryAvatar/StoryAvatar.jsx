@@ -4,7 +4,7 @@ import './StoryAvatar.css';
 
 const StoryAvatar = ({ user }) => {
 	return (
-		<Link to='/stories'>
+		<Link to={`/stories/${user.userName}`}>
 			<div className='story-avatar pointer'>
 				<img
 					alt='storyImg'

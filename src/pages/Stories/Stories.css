@@ -1,8 +1,9 @@
 .stories-page {
-    padding: 2% 3%;
+    padding: 1% 2.5%;
     background-color: rgb(65, 62, 62);
     color: white;
     height: 100%;
+    overflow: hidden;
 }
 
 .stories-page header {
@@ -14,4 +15,7 @@
 .stories-page main {
     display: flex;
     justify-content: center;
+    align-items: center;
+    /* width: 50%; */
+    overflow-x: auto;
 }

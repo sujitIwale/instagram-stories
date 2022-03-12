@@ -9,7 +9,11 @@ function App() {
 			<Router>
 				<Routes>
 					<Route exact path='/' element={<Home />} />
-					<Route exact path='/stories' element={<Stories />} />
+					<Route
+						exact
+						path='/stories/:username'
+						element={<Stories />}
+					/>
 				</Routes>
 			</Router>
 		</div>

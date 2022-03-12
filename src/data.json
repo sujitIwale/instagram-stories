@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "userName": "Jhon Doe",
+        "userName": "JhonDoe",
         "img_url": "https://miro.medium.com/max/785/0*Ggt-XwliwAO6QURi.jpg",
         "stories": [
             {
@@ -24,12 +24,12 @@
             {
                 "video_url": "https://cdn.videvo.net/videvo_files/video/free/2019-11/large_watermarked/190301_1_25_11_preview.mp4",
                 "uploaded": "",
-                "title": "First Story"
+                "title": "Ronaldo Story 1"
             },
             {
                 "video_url": "https://cdn.videvo.net/videvo_files/video/free/2019-09/small_watermarked/190828_27_SuperTrees_HD_17_preview.webm",
                 "uploaded": "",
-                "title": "Second Story"
+                "title": "Ronaldo Story 2"
             }
         ]
     },
@@ -52,7 +52,92 @@
     },
     {
         "id": 4,
-        "userName": "Jhon Doe",
+        "userName": "Michael",
+        "img_url": "https://miro.medium.com/max/785/0*Ggt-XwliwAO6QURi.jpg",
+        "stories": [
+            {
+                "video_url": "https://cdn.videvo.net/videvo_files/video/free/2019-11/large_watermarked/190301_1_25_11_preview.mp4",
+                "uploaded": "",
+                "title": "First Story"
+            },
+            {
+                "video_url": "https://cdn.videvo.net/videvo_files/video/free/2019-09/small_watermarked/190828_27_SuperTrees_HD_17_preview.webm",
+                "uploaded": "",
+                "title": "Second Story"
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "userName": "Brad",
+        "img_url": "https://miro.medium.com/max/785/0*Ggt-XwliwAO6QURi.jpg",
+        "stories": [
+            {
+                "video_url": "https://cdn.videvo.net/videvo_files/video/free/2019-11/large_watermarked/190301_1_25_11_preview.mp4",
+                "uploaded": "",
+                "title": "First Story"
+            },
+            {
+                "video_url": "https://cdn.videvo.net/videvo_files/video/free/2019-09/small_watermarked/190828_27_SuperTrees_HD_17_preview.webm",
+                "uploaded": "",
+                "title": "Second Story"
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "userName": "jack",
+        "img_url": "https://miro.medium.com/max/785/0*Ggt-XwliwAO6QURi.jpg",
+        "stories": [
+            {
+                "video_url": "https://cdn.videvo.net/videvo_files/video/free/2019-11/large_watermarked/190301_1_25_11_preview.mp4",
+                "uploaded": "",
+                "title": "First Story"
+            },
+            {
+                "video_url": "https://cdn.videvo.net/videvo_files/video/free/2019-09/small_watermarked/190828_27_SuperTrees_HD_17_preview.webm",
+                "uploaded": "",
+                "title": "Second Story"
+            }
+        ]
+    },
+    {
+        "id": 7,
+        "userName": "Elon",
+        "img_url": "https://miro.medium.com/max/785/0*Ggt-XwliwAO6QURi.jpg",
+        "stories": [
+            {
+                "video_url": "https://cdn.videvo.net/videvo_files/video/free/2019-11/large_watermarked/190301_1_25_11_preview.mp4",
+                "uploaded": "",
+                "title": "First Story"
+            },
+            {
+                "video_url": "https://cdn.videvo.net/videvo_files/video/free/2019-09/small_watermarked/190828_27_SuperTrees_HD_17_preview.webm",
+                "uploaded": "",
+                "title": "Second Story"
+            }
+        ]
+    },
+    {
+        "id": 8,
+        "userName": "Mark",
+        "img_url": "https://miro.medium.com/max/785/0*Ggt-XwliwAO6QURi.jpg",
+        "stories": [
+            {
+                "video_url": "https://cdn.videvo.net/videvo_files/video/free/2019-11/large_watermarked/190301_1_25_11_preview.mp4",
+                "uploaded": "",
+                "title": "First Story"
+            },
+            {
+                "video_url": "https://cdn.videvo.net/videvo_files/video/free/2019-09/small_watermarked/190828_27_SuperTrees_HD_17_preview.webm",
+                "uploaded": "",
+                "title": "Second Story"
+            }
+        ]
+    },
+    {
+        "id": 9,
+        "userName": "Bill",
         "img_url": "https://miro.medium.com/max/785/0*Ggt-XwliwAO6QURi.jpg",
         "stories": [
             {

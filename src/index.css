@@ -29,6 +29,10 @@ code {
   display: flex;
 }
 
+.hidden {
+  visibility: hidden;
+}
+
 a {
   text-decoration: none;
   color: inherit;

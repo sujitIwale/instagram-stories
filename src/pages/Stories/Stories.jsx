@@ -1,9 +1,13 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
+import data from '../../data.json';
 import StoryContainer from '../../components/StoryContainer/StoryContainer';
 import './Stories.css';
+import StorySlider from '../../components/StorySlider/StorySlider';
 
 const Stories = () => {
+	const userName = useParams().username;
+
 	return (
 		<div className='stories-page'>
 			<header>
@@ -11,12 +15,12 @@ const Stories = () => {
 					<h3>Instagram</h3>
 				</Link>
 				<Link to='/'>
-					<h2>X</h2>
+					<h2>
+						<i class='fa-solid fa-xmark'></i>
+					</h2>
 				</Link>
 			</header>
-			<main>
-				<StoryContainer />
-			</main>
+			<StorySlider data={data} userName={userName} />
 		</div>
 	);
 };
