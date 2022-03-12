@@ -1,0 +1,70 @@
+[
+    {
+        "id": 1,
+        "userName": "Jhon Doe",
+        "img_url": "https://miro.medium.com/max/785/0*Ggt-XwliwAO6QURi.jpg",
+        "stories": [
+            {
+                "video_url": "https://cdn.videvo.net/videvo_files/video/free/2019-11/large_watermarked/190301_1_25_11_preview.mp4",
+                "uploaded": "",
+                "title": "First Story"
+            },
+            {
+                "video_url": "https://cdn.videvo.net/videvo_files/video/free/2019-09/small_watermarked/190828_27_SuperTrees_HD_17_preview.webm",
+                "uploaded": "",
+                "title": "Second Story"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "userName": "Ronaldo",
+        "img_url": "https://e00-marca.uecdn.es/assets/multimedia/imagenes/2021/12/10/16391545485537.jpg",
+        "stories": [
+            {
+                "video_url": "https://cdn.videvo.net/videvo_files/video/free/2019-11/large_watermarked/190301_1_25_11_preview.mp4",
+                "uploaded": "",
+                "title": "First Story"
+            },
+            {
+                "video_url": "https://cdn.videvo.net/videvo_files/video/free/2019-09/small_watermarked/190828_27_SuperTrees_HD_17_preview.webm",
+                "uploaded": "",
+                "title": "Second Story"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "userName": "Rock",
+        "img_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTYYTLgX6ZLrYwz-3c7iB3gVs87jIKnbbg3Ba-Gt8ykJF2uZgu4",
+        "stories": [
+            {
+                "video_url": "https://cdn.videvo.net/videvo_files/video/free/2019-11/large_watermarked/190301_1_25_11_preview.mp4",
+                "uploaded": "",
+                "title": "First Story"
+            },
+            {
+                "video_url": "https://cdn.videvo.net/videvo_files/video/free/2019-09/small_watermarked/190828_27_SuperTrees_HD_17_preview.webm",
+                "uploaded": "",
+                "title": "Second Story"
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "userName": "Jhon Doe",
+        "img_url": "https://miro.medium.com/max/785/0*Ggt-XwliwAO6QURi.jpg",
+        "stories": [
+            {
+                "video_url": "https://cdn.videvo.net/videvo_files/video/free/2019-11/large_watermarked/190301_1_25_11_preview.mp4",
+                "uploaded": "",
+                "title": "First Story"
+            },
+            {
+                "video_url": "https://cdn.videvo.net/videvo_files/video/free/2019-09/small_watermarked/190828_27_SuperTrees_HD_17_preview.webm",
+                "uploaded": "",
+                "title": "Second Story"
+            }
+        ]
+    }
+]

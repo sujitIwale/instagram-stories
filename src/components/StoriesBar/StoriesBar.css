@@ -1,0 +1,15 @@
+.stories-bar {
+    margin-top: 10px;
+    height: 100px;
+    border-radius: 4px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    padding: 4px;
+}
+
+.stories-list {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}

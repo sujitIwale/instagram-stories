@@ -1,0 +1,26 @@
+.story-container {
+    height: 600px;
+    width: 300px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    color: rgb(34, 34, 34);
+}
+
+.story-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px 12px;
+}
+
+.story-header img {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+
+.video {
+    height: 100%;
+}

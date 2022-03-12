@@ -1,0 +1,17 @@
+.stories-page {
+    padding: 2% 3%;
+    background-color: rgb(65, 62, 62);
+    color: white;
+    height: 100%;
+}
+
+.stories-page header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.stories-page main {
+    display: flex;
+    justify-content: center;
+}
