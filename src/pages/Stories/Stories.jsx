@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link, useParams } from 'react-router-dom';
 import data from '../../data.json';
-import StoryContainer from '../../components/StoryContainer/StoryContainer';
 import './Stories.css';
 import StorySlider from '../../components/StorySlider/StorySlider';
 
@@ -16,7 +15,7 @@ const Stories = () => {
 				</Link>
 				<Link to='/'>
 					<h2>
-						<i class='fa-solid fa-xmark'></i>
+						<i className='fa-solid fa-xmark'></i>
 					</h2>
 				</Link>
 			</header>

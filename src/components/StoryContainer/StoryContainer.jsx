@@ -1,5 +1,4 @@
-import React, { useLayoutEffect, useRef, useState } from 'react';
-import data from '../../data.json';
+import React, { useCallback, useLayoutEffect, useRef, useState } from 'react';
 import './StoryContainer.css';
 import UnselectedStory from './UnselectedStory';
 
@@ -24,23 +23,30 @@ const StoryContainer = ({ user, selected }) => {
 			console.log(videoRef.current);
 		}
 	};
-	useLayoutEffect(() => {
-		window.onkeydown = (e) => {
+	const onKeyDown = useCallback(
+		(e) => {
 			if (e.key === 'ArrowLeft') {
 				console.log(e);
-				console.log(Current);
+				// console.log(Current);
 				previousStory();
 			} else if (e.key === 'ArrowRight') {
 				nextStory();
 			}
-		};
+		},
+		[nextStory, previousStory]
+	);
+
+	useLayoutEffect(() => {
+		if (selected) {
+			window.onkeydown = onKeyDown;
+		}
 
 		return () => {
-			window.onkeydown = null;
+			window.removeEventListener('keydown', onKeyDown);
 		};
-	}, [Current]);
-
+	}, [user, onKeyDown, selected]);
 	if (!selected) return <UnselectedStory user={user} />;
+
 	return (
 		<div className='story-container'>
 			<i
@@ -59,7 +65,11 @@ const StoryContainer = ({ user, selected }) => {
 				<h3 className='story-title'>{user.stories[Current].title}</h3>
 				{user.stories.map((story, i) =>
 					Current === i ? (
-						<video className='video' controls ref={videoRef}>
+						<video
+							key={i}
+							className='video'
+							controls
+							ref={videoRef}>
 							<source
 								src={user.stories[Current].video_url}></source>
 						</video>

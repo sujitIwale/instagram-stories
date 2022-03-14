@@ -11,7 +11,6 @@ const getStories = (stories, userId) => {
 			? (stories = stories.slice(0, 3))
 			: (stories = stories.slice(1, 4));
 	}
-	console.log(stories);
 	return stories;
 };
 
@@ -23,18 +22,19 @@ const StorySlider = ({ data, userName }) => {
 	useEffect(() => {
 		let start = userIndex - 2,
 			end = userIndex + 2;
-		const stories = data.filter((story, i) => {
+		const UserStories = data.filter((story, i) => {
 			if (i >= start && i <= end) return true;
 			else return false;
 		});
-		console.log(stories);
-		setUserStories(stories);
-	}, [user, userIndex, data]);
+		console.log(UserStories);
+		setUserStories(UserStories);
+	}, [userName]);
 	if (!user || userIndex === -1) return null;
 	return (
 		<main className='story-slider'>
-			{getStories(UserStories, userIndex).map((u) => (
+			{getStories(UserStories, userIndex).map((u, i) => (
 				<StoryContainer
+					key={i}
 					user={u}
 					selected={user.userName === u.userName ? true : false}
 				/>
