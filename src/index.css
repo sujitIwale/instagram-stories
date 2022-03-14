@@ -42,3 +42,15 @@ a {
   align-items: center;
   justify-content: center;
 }
+
+.customize-scrollbar::-webkit-scrollbar {
+  /* width: 10px; */
+  background-color: aqua;
+  border-radius: 20px;
+}
+.customize-scrollbar::-webkit-scrollbar-thumb {
+  margin: 2px;
+  border-radius: 20px;
+  width: 4px;
+  background-color: rgb(94, 78, 235);
+}

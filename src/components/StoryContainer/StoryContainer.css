@@ -75,3 +75,16 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#40C9FF", en
     justify-content: center;
     color: black;
 }
+
+
+@media only screen and (max-width: 500px){
+  .story {
+    width: 300px;
+    background-image: var(--background-color);
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    color: rgb(34, 34, 34);
+    padding: 0 5px;
+}
+}

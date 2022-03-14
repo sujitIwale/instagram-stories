@@ -7,17 +7,18 @@ const StoryContainer = ({ user, selected }) => {
 	const videoRef = useRef();
 	const noOfStories = user.stories.length;
 
-	const nextStory = () => {
+	const nextStory = useCallback(() => {
 		if (noOfStories - 1 === Current) return;
 		setCurrent((state) => state + 1);
 		// console.log(Current);
-		console.log(user.stories[Current + 1]);
-	};
+		// console.log(user.stories[Current + 1]);
+	}, [noOfStories, Current]);
 
-	const previousStory = () => {
+	const previousStory = useCallback(() => {
 		if (Current <= 0) return;
 		setCurrent((state) => state - 1);
-	};
+	}, [Current]);
+	
 	const videoAction = () => {
 		if (videoRef.current) {
 			console.log(videoRef.current);

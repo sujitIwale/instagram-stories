@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import StoryContainer from '../StoryContainer/StoryContainer';
 import './StorySlider.css';
 
@@ -16,6 +16,7 @@ const getStories = (stories, userId) => {
 
 const StorySlider = ({ data, userName }) => {
 	const [UserStories, setUserStories] = useState([]);
+	const storySliderRef = useRef();
 	const user = data.find((user) => user.userName === userName);
 	const userIndex = data.findIndex((user) => user.userName === userName);
 
@@ -28,10 +29,14 @@ const StorySlider = ({ data, userName }) => {
 		});
 		console.log(UserStories);
 		setUserStories(UserStories);
-	}, [userName]);
+		setTimeout(() => {
+			storySliderRef.current.scrollLeft =
+				parseInt(UserStories.length / 2) * 180;
+		}, 500);
+	}, [userName, data, userIndex]);
 	if (!user || userIndex === -1) return null;
 	return (
-		<main className='story-slider'>
+		<main className='story-slider' ref={storySliderRef}>
 			{getStories(UserStories, userIndex).map((u, i) => (
 				<StoryContainer
 					key={i}

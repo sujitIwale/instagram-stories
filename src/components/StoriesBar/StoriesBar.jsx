@@ -5,7 +5,7 @@ import './StoriesBar.css';
 
 const StoriesBar = () => {
 	return (
-		<div className='stories-bar'>
+		<div className='stories-bar customize-scrollvar'>
 			<ul className='stories-list'>
 				{data.map((user) => (
 					<li key={user.id}>

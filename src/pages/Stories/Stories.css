@@ -19,3 +19,14 @@
     /* width: 50%; */
     overflow-x: auto;
 }
+
+
+@media only screen and (max-width: 500px){
+  .stories-page main {
+    display: flex;
+    justify-content: inherit;
+    align-items: center;
+    /* width: 50%; */
+    overflow-x: auto;
+}
+}

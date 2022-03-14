@@ -6,6 +6,7 @@
     display: flex;
     align-items: center;
     padding: 4px;
+    overflow-x: auto;
 }
 
 .stories-list {
